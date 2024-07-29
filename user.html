@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account - Healthcare Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background: #77A1D3;
+            border: 1px solid #fff;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .main h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section a {
+            /* display: block;
+            width: auto;
+            background-color: #77A1D3;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+            text-transform: uppercase; */
+            width: 200px;
+            display: block;
+            color: #fff;
+            background-color: #77A1D3;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+            ;
+        }
+        .section a:hover {
+            background-color: #333;
+            border: 1px solid #fff;
+        }
+        .back-home {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .back-home a {
+            color: #fff;
+            background-color: #77A1D3;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .back-home a:hover {
+            background-color: #333;
+            border: 1px solid #fff;
+        }
+        footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>User Account</h1>
+            <div class="navbar">
+                <a href="add-funds.html">Add Funds</a>
+                <a href="make-payment.html">Make Payment</a>
+                <a href="view-history.html">View Transaction History</a>
+                <a href="overview-insurance.html">Manage Claims</a>
+            </div>
+        </div>
+    </header>
+    <div class="container main">
+        <h1>Overview of Your Account</h1>
+        <div class="section">
+            <h2>Account Balance</h2>
+            <p>$1,500.00</p>
+        </div>
+        <div class="section">
+            <h2>Health Savings Account</h2>
+            <p>$10,000.00</p>
+            <a href="hsam.html">Manage Account</a>
+        </div>
+        <div class="section">
+            <h2>Insurance Claims</h2>
+            <p>Pending: $200.00 | Approved: $1,000.00</p>
+        </div>
+        <div class="section">
+            <h2>Transaction History</h2>
+            <p>Last transaction: $50.00 to Health Clinic on 07/15/2024</p>
+        </div>
+        <div class="back-home">
+            <a href="index.html">Back to Homepage</a>
+        </div>
+    </div>
+    <footer>
+        <div class="section">
+            <p>&copy; 2024 HealthFunds. All rights reserved.</p>
+            <p>Hanyu</p>
+        </div>
+    </footer>
+</body>
+</html>

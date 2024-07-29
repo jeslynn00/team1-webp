@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSA Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        header .container-h{
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header .container-h {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .container-h h1 {
+            margin: 0;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background: #77A1D3;
+            border: 1px solid #fff;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #333;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .balance, .transactions, .investments {
+            margin-top: 20px;
+        }
+        .transactions table, .investments table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .transactions th, .transactions td, .investments th, .investments td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .transactions th, .investments th {
+            background-color: #809cba;
+            color: #fff;
+        }
+        footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-h">
+            <h1>HSA Management</h1>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="user.html">User Account</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Account Balance</h2>
+            <p>Current Balance: <strong>$10,000</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Contribute to HSA</h2>
+            <form>
+                <div class="form-group">
+                    <label for="contribution-amount">Contribution Amount</label>
+                    <input type="number" id="contribution-amount" name="contribution-amount" required>
+                </div>
+                <button type="submit" class="btn">Contribute</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Recent Transactions</h2>
+            <div class="transactions">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2024</td>
+                            <td>Medical Expense</td>
+                            <td>-$200</td>
+                        </tr>
+                        <tr>
+                            <td>12/15/2023</td>
+                            <td>User Contribution</td>
+                            <td>$500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Investment Claims</h2>
+            <div class="investments">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Policy Number</th>
+                            <th>Claim Type</th>
+                            <th>Document</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>L1398471K</td>
+                            <td>Personal</td>
+                            <td>PDF</td>
+                        </tr>
+                        <tr>
+                            <td>P2368516N</td>
+                            <td>Personal</td>
+                            <td>PDF</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="section">
+            <p>&copy; 2024 HealthFunds. All rights reserved.</p>
+            <p>Natalie</p>
+        </div>
+    </footer>
+</body>
+</html>

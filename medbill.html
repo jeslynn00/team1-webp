@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Bill Payment - Healthcare Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background: #77A1D3;
+            border: 1px solid #fff;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .main h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .main p {
+            text-align: center;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+        }
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100px; /* Ensure the max-width of each payment method container */
+        }
+        .payment-method img {
+            width: 100%; /* Adjusted size for better layout */
+            border: 2px solid grey;
+            border-radius: 20%;
+            transition: transform 0.3s;
+        }
+        .payment-method img:hover {
+            transform: scale(1.1);
+        }
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hello! [Patient's Name]</h1>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="user.html">User Account</a>
+            </div>
+        </div>
+    </header>
+    <div class="container main">
+        <h2>This is your outstanding bill.</h2>
+        <p>Consultation Fee: $8.04</p>
+        <p>Medicine Fee: N/A</p>
+        <p>Total Fee: $8.04</p>
+        <p>Choose your payment method</p>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <a href="otp.html"><img src="Visa.jpg" alt="Visa"></a>
+                <p>Visa</p>
+            </div>
+            <div class="payment-method">
+                <a href="otp.html"><img src="apple pay.png" alt="Apple Pay"></a>
+                <p>Apple Pay</p>
+            </div>
+            <div class="payment-method">
+                <a href="otp.html"><img src="account balance.png" alt="Account balance"></a>
+                <p>Account Balance</p>
+            </div>
+            <div class="payment-method">
+                <a href="atop.html"><img src="Health saving account balance.png" alt="Health Saving Account Balance"></a>
+                <p>Health Saving Account Balance</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="section">
+            <p>&copy; 2024 HealthFunds. All rights reserved.</p>
+            <p>Zjien</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

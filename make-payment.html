@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Payment - Healthcare Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background: #77A1D3;
+            border: 1px solid #fff;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .main h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #77A1D3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Payment Gateway</h1>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="user.html">User Account</a>
+            </div>
+        </div>
+    </header>
+    <div class="container main">
+        <h2>Make a Payment</h2>
+        <form id="makePaymentForm" action="medbill.html">
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" name="recipient" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+    <footer>
+        <div class="section">
+            <p>&copy; 2024 HealthFunds. All rights reserved.</p>
+            <p>Hanyu</p>
+        </div>
+    </footer>
+</body>
+</html>

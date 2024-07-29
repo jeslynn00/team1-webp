@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Healthcare Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77A1D3 3px solid;
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background: #77A1D3;
+            border: 1px solid #fff;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .main h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        #transactionHistory {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+        #transactionHistory li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        #transactionHistory li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><b>Transaction History</b></h1>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="user.html">User Account</a>
+            </div>
+        </div>
+    </header>
+    <div class="container main">
+        <h2>Transactions</h2>
+        <ul id="transactionHistory">
+            <li>$50.00 to Dermatologist on 09/15/2024</li>
+            <li>$30.00 to Pharmacy on 07/14/2024</li>
+            <li>$100.00 to Gynaecology on 06/05/2023</li>
+            <li>$75.00 to Dentist on 02/12/2023</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="section">
+            <p>&copy; 2024 HealthFunds. All rights reserved.</p>
+            <p>Hanyu</p>
+        </div>
+    </footer>
+</body>
+</html>
